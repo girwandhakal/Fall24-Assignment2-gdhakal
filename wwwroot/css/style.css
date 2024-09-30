@@ -1,0 +1,159 @@
+/* Global Reset and Box-Sizing */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('bg2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+}
+
+
+
+/* Restyled h1 */
+h1 {
+    background-color: #595959; /* Medium Gray */
+    color: #f0f0f0; /* Light Gray Text */
+    margin: 20px auto;
+    padding: 15px 30px;
+    display: grid;
+    place-content: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: "Gotu", sans-serif;
+    font-size: 2rem;
+    max-width: 80%;
+    text-align: center;
+}
+
+/* Time Div Styling */
+#time-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    background-color: #d9d9d9; /* Light Gray */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+/* Time Button Styling */
+#time-button {
+    background-color: #4a4a4a; /* Dark Gray */
+    color: #f0f0f0; /* Light Gray Text */
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#time-button:hover {
+    background-color: #6d6d6d; /* Slightly lighter gray */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+#time-button:active {
+    background-color: #333; /* Darker on click */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Time Display Styling */
+#time {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333; /* Dark Gray Text */
+    background-color: #e0e0e0; /* Light Gray */
+    padding: 8px;
+    border-radius: 5px;
+    min-width: 80px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    visibility:hidden;
+    display:none;
+}
+
+/* Search Div */
+#search-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+/* Buttons Styling */
+#buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #6d6d6d; /* Medium Gray */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    background-color: #8a8a8a; /* Lighter Gray on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    color: #f0f0f0; /* Light Gray Text */
+}
+
+.button:active {
+    background-color: #4a4a4a; /* Darker gray on click */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    transform: scale(0.98);
+}
+
+/* Query Input Styling */
+#query {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #6d6d6d; /* Matches button color */
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+    #query:focus {
+        border-color: #333; /* Darker gray on focus */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+    }
+
+#searchResults {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    width: 50%; 
+    overflow-y: auto; 
+    max-height: 400px;
+    visibility:hidden;
+}

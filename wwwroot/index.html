@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.0/jquery-ui.min.js" integrity="sha256-Fb0zP4jE3JHqu+IBB9YktLcSjI1Zc6J2b6gTjB0LpoM=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.0/themes/smoothness/jquery-ui.css" integrity="sha256-wpw0WVB1ZY1ZdkFKI0BKnEu77yTcI3lwVRNj3LCzUr4=" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
+
+    <title>Bing Turbo Search</title>
+</head>
+
+<body>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <h1 class="title">
+        Turbo Search
+    </h1>
+
+    <div id="time-div">
+        <div id="time-button">Get time</div>
+        <div id="time">HH:MM</div>
+    </div>
+
+    <div id="search-div">
+        <input id="query" />
+        <div id="buttons">
+            <div id="Search" class="button" onclick="apiSearch()">Search</div>
+            <div id="im-feeling-lucky" class="button">I'm feeling lucky</div>
+        </div>
+        <div id="searchResults">
+
+        </div>
+    </div>
+    
+</body>
+
+</html>
