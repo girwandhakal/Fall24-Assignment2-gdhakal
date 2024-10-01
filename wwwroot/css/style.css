@@ -1,14 +1,22 @@
 /* Global Reset and Box-Sizing */
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 body {
     background-image: url('bg2.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
+    height: 100% ;
+    margin: 0;
+    padding: 20px;
 }
 
 
@@ -17,7 +25,8 @@ body {
 h1 {
     background-color: #595959; /* Medium Gray */
     color: #f0f0f0; /* Light Gray Text */
-    margin: 20px auto;
+    margin: 0 auto;
+    margin-bottom:20px;
     padding: 15px 30px;
     display: grid;
     place-content: center;
@@ -25,61 +34,32 @@ h1 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-family: "Gotu", sans-serif;
     font-size: 2rem;
-    max-width: 80%;
+    max-width: 50%;
     text-align: center;
+}
+
+h1:hover{
+    cursor:pointer;
 }
 
 /* Time Div Styling */
 #time-div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     gap: 20px;
-    padding: 10px;
-    background-color: #d9d9d9; /* Light Gray */
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0;
     max-width: 300px;
-    margin: 20px auto;
-}
-
-/* Time Button Styling */
-#time-button {
-    background-color: #4a4a4a; /* Dark Gray */
-    color: #f0f0f0; /* Light Gray Text */
-    padding: 8px 15px;
-    border-radius: 5px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-#time-button:hover {
-    background-color: #6d6d6d; /* Slightly lighter gray */
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-}
-
-#time-button:active {
-    background-color: #333; /* Darker on click */
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
 }
 
 /* Time Display Styling */
 #time {
-    font-size: 16px;
     font-weight: bold;
-    color: #333; /* Dark Gray Text */
-    background-color: #e0e0e0; /* Light Gray */
-    padding: 8px;
-    border-radius: 5px;
+    color: black; /* Dark Gray Text */
     min-width: 80px;
     text-align: center;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    visibility:hidden;
-    display:none;
 }
 
 /* Search Div */
@@ -88,7 +68,7 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 20px;
+    margin:0;
 }
 
 /* Buttons Styling */
@@ -137,10 +117,10 @@ h1 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-    #query:focus {
-        border-color: #333; /* Darker gray on focus */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
-    }
+#query:focus {
+    border-color: #333; /* Darker gray on focus */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+}
 
 #searchResults {
     display: flex; 
@@ -149,11 +129,29 @@ h1 {
     align-items: center;
     margin: 20px auto;
     padding: 20px; 
-    background-color: #f9f9f9; 
+    background-color: rgb(103, 76, 76, 0.85); 
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     width: 50%; 
     overflow-y: auto; 
     max-height: 400px;
     visibility:hidden;
+    color:white;
+}
+
+.resultItem:last-child{
+    margin:0;
+}
+
+.resultItem{
+    margin-bottom:20px;
+
+}
+
+#searchResults::-webkit-scrollbar {
+    display:none;
+}
+
+a{
+    color:deepskyblue;
 }

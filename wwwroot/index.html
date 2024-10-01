@@ -20,23 +20,22 @@
 
 <body>
     <script type="text/javascript" src="./js/script.js"></script>
-    <h1 class="title">
+    <h1 class="title" id="title">
         Turbo Search
     </h1>
 
     <div id="time-div">
-        <div id="time-button">Get time</div>
-        <div id="time">HH:MM</div>
+        <div id="time"></div>
     </div>
 
     <div id="search-div">
         <input id="query" />
         <div id="buttons">
-            <div id="Search" class="button" onclick="apiSearch()">Search</div>
+            <button id="Search" class="button">Search</button>
             <div id="im-feeling-lucky" class="button">I'm feeling lucky</div>
+            <div id="get-time" class="button">Get Time</div>
         </div>
         <div id="searchResults">
-
         </div>
     </div>
     
